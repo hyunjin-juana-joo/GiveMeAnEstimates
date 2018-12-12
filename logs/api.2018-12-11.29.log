@@ -1,0 +1,194 @@
+2018:12:11 19:15:06.073 INFO  --- [main] c.juana.GiveMeAnEstimateApplication : Starting GiveMeAnEstimateApplication on juana.local with PID 35648 (/Users/juana/Documents/workspcae/GiveMeAnEstimates/out/production/classes started by juana in /Users/juana/Documents/workspcae/GiveMeAnEstimates) 
+2018:12:11 19:15:06.074 INFO  --- [main] c.juana.GiveMeAnEstimateApplication : The following profiles are active: local 
+2018:12:11 19:15:06.768 INFO  --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode! 
+2018:12:11 19:15:06.768 INFO  --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode. 
+2018:12:11 19:15:06.831 INFO  --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54ms. Found 1 repository interfaces. 
+2018:12:11 19:15:07.124 INFO  --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode! 
+2018:12:11 19:15:07.125 INFO  --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode. 
+2018:12:11 19:15:07.136 INFO  --- [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.juana.repository.BoardRepository. 
+2018:12:11 19:15:07.137 INFO  --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces. 
+2018:12:11 19:15:07.397 INFO  --- [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'dataManagerConfig' of type [com.juana.config.DataManagerConfig$$EnhancerBySpringCGLIB$$1e3c809b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018:12:11 19:15:07.477 INFO  --- [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$93ce592b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018:12:11 19:15:07.491 INFO  --- [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$134ea65d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018:12:11 19:15:07.855 INFO  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http) 
+2018:12:11 19:15:07.867 INFO  --- [main] o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"] 
+2018:12:11 19:15:07.876 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2018:12:11 19:15:07.876 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/9.0.13 
+2018:12:11 19:15:07.882 INFO  --- [main] o.a.c.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/juana/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+2018:12:11 19:15:07.971 INFO  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2018:12:11 19:15:07.971 INFO  --- [main] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1813 ms 
+2018:12:11 19:15:08.405 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2018:12:11 19:15:08.406 WARN  --- [main] c.z.hikari.util.DriverDataSource : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation. 
+2018:12:11 19:15:08.633 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2018:12:11 19:15:09.449 INFO  --- [main] org.hibernate.Version : HHH000412: Hibernate Core {5.3.7.Final} 
+2018:12:11 19:15:09.451 INFO  --- [main] org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found 
+2018:12:11 19:15:09.563 INFO  --- [main] o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.4.Final} 
+2018:12:11 19:15:09.720 INFO  --- [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect 
+2018:12:11 19:15:10.434 INFO  --- [main] o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerUnit' 
+2018:12:11 19:15:11.486 INFO  --- [main] o.s.s.c.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor' 
+2018:12:11 19:15:11.712 WARN  --- [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2018:12:11 19:15:12.347 INFO  --- [main] o.s.b.a.e.web.EndpointLinksResolver : Exposing 15 endpoint(s) beneath base path '/actuator' 
+2018:12:11 19:15:12.440 INFO  --- [main] o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"] 
+2018:12:11 19:15:12.457 INFO  --- [main] o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read 
+2018:12:11 19:15:12.461 ERROR --- [main] o.a.catalina.util.LifecycleBase : Failed to start component [Connector[HTTP/1.1-8080]] 
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1001)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.juana.GiveMeAnEstimateApplication.main(GiveMeAnEstimateApplication.java:26)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1067)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1149)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:561)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:998)
+	... 14 common frames omitted
+2018:12:11 19:15:12.466 INFO  --- [main] o.a.coyote.http11.Http11NioProtocol : Pausing ProtocolHandler ["http-nio-8080"] 
+2018:12:11 19:15:12.466 INFO  --- [main] o.a.catalina.core.StandardService : Stopping service [Tomcat] 
+2018:12:11 19:15:12.468 WARN  --- [main] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748) 
+2018:12:11 19:15:12.469 WARN  --- [main] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748) 
+2018:12:11 19:15:12.469 WARN  --- [main] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [pool-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.KQueueArrayWrapper.kevent0(Native Method)
+ sun.nio.ch.KQueueArrayWrapper.poll(KQueueArrayWrapper.java:198)
+ sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:117)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:340)
+ org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+ org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+ java.lang.Thread.run(Thread.java:748) 
+2018:12:11 19:15:12.470 WARN  --- [main] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [I/O dispatcher 1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.KQueueArrayWrapper.kevent0(Native Method)
+ sun.nio.ch.KQueueArrayWrapper.poll(KQueueArrayWrapper.java:198)
+ sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:117)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:255)
+ org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+ org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
+ java.lang.Thread.run(Thread.java:748) 
+2018:12:11 19:15:12.470 WARN  --- [main] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [I/O dispatcher 2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.KQueueArrayWrapper.kevent0(Native Method)
+ sun.nio.ch.KQueueArrayWrapper.poll(KQueueArrayWrapper.java:198)
+ sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:117)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:255)
+ org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+ org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
+ java.lang.Thread.run(Thread.java:748) 
+2018:12:11 19:15:12.471 WARN  --- [main] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [I/O dispatcher 3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.KQueueArrayWrapper.kevent0(Native Method)
+ sun.nio.ch.KQueueArrayWrapper.poll(KQueueArrayWrapper.java:198)
+ sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:117)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:255)
+ org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+ org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
+ java.lang.Thread.run(Thread.java:748) 
+2018:12:11 19:15:12.471 WARN  --- [main] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [I/O dispatcher 4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.KQueueArrayWrapper.kevent0(Native Method)
+ sun.nio.ch.KQueueArrayWrapper.poll(KQueueArrayWrapper.java:198)
+ sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:117)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:255)
+ org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+ org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
+ java.lang.Thread.run(Thread.java:748) 
+2018:12:11 19:15:12.471 WARN  --- [main] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [I/O dispatcher 5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.KQueueArrayWrapper.kevent0(Native Method)
+ sun.nio.ch.KQueueArrayWrapper.poll(KQueueArrayWrapper.java:198)
+ sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:117)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:255)
+ org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+ org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
+ java.lang.Thread.run(Thread.java:748) 
+2018:12:11 19:15:12.472 WARN  --- [main] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [I/O dispatcher 6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.KQueueArrayWrapper.kevent0(Native Method)
+ sun.nio.ch.KQueueArrayWrapper.poll(KQueueArrayWrapper.java:198)
+ sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:117)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:255)
+ org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+ org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
+ java.lang.Thread.run(Thread.java:748) 
+2018:12:11 19:15:12.472 WARN  --- [main] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [I/O dispatcher 7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.KQueueArrayWrapper.kevent0(Native Method)
+ sun.nio.ch.KQueueArrayWrapper.poll(KQueueArrayWrapper.java:198)
+ sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:117)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:255)
+ org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+ org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
+ java.lang.Thread.run(Thread.java:748) 
+2018:12:11 19:15:12.473 WARN  --- [main] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [I/O dispatcher 8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.KQueueArrayWrapper.kevent0(Native Method)
+ sun.nio.ch.KQueueArrayWrapper.poll(KQueueArrayWrapper.java:198)
+ sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:117)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:255)
+ org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+ org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
+ java.lang.Thread.run(Thread.java:748) 
+2018:12:11 19:15:12.476 INFO  --- [main] o.a.catalina.util.LifecycleBase : The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored. 
+2018:12:11 19:15:12.477 INFO  --- [main] o.a.coyote.http11.Http11NioProtocol : Stopping ProtocolHandler ["http-nio-8080"] 
+2018:12:11 19:15:12.477 INFO  --- [main] o.a.coyote.http11.Http11NioProtocol : Destroying ProtocolHandler ["http-nio-8080"] 
+2018:12:11 19:15:12.493 ERROR --- [main] o.s.b.d.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+ 
+2018:12:11 19:15:12.497 INFO  --- [main] o.s.s.c.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor' 
+2018:12:11 19:15:12.498 INFO  --- [main] o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'entityManagerUnit' 
+2018:12:11 19:15:12.501 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2018:12:11 19:15:12.506 INFO  --- [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 

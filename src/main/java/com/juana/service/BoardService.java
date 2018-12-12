@@ -15,13 +15,13 @@ import java.util.Optional;
  */
 @Slf4j
 @Service
-@Transactional
 public class BoardService {
     @Autowired
     private BoardRepository boardRepository;
 
     public List<BoardEntity> getBoardList() {
-        return boardRepository.findAll();
+        List<BoardEntity> boardList = boardRepository.findAll();
+        return boardList;
     }
 
     public Optional<BoardEntity> getBoard(int id) {

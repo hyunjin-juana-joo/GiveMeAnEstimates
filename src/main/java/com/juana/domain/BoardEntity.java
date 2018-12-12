@@ -13,9 +13,9 @@ import java.util.Date;
 
 @Data
 @Entity
-@EqualsAndHashCode(callSuper = true)
-@Table
-@Where(clause="is_deleted = 0")
+@EqualsAndHashCode(callSuper = false)
+@Table(name="Board", schema = "Estimate")
+@Where(clause="isDeleted = 0")
 public class BoardEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -23,18 +23,21 @@ public class BoardEntity {
 
     private int userId;
 
+    @Column(nullable = true)
+    private String userName;
+
     private String title;
 
     @Column(columnDefinition = "TEXT")
     private String content;
 
-    private boolean is_deleted;
+    private boolean isDeleted;
 
     @Column(columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP", insertable = false, updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
-    private Date created_At;
+    private Date createdAt;
 
     @Column(columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP", insertable = false, updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
-    private Date updated_At;
+    private Date updatedAt;
 }

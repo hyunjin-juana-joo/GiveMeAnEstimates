@@ -1,0 +1,28 @@
+2018:12:12 09:00:16.761 INFO  --- [Test worker] c.j.GiveMeAnEstimateApplicationTests : Starting GiveMeAnEstimateApplicationTests on juana.local with PID 66210 (started by juana in /Users/juana/Documents/workspcae/GiveMeAnEstimates) 
+2018:12:12 09:00:16.761 INFO  --- [Test worker] c.j.GiveMeAnEstimateApplicationTests : The following profiles are active: local 
+2018:12:12 09:00:17.548 INFO  --- [Test worker] o.s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode! 
+2018:12:12 09:00:17.549 INFO  --- [Test worker] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode. 
+2018:12:12 09:00:17.614 INFO  --- [Test worker] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54ms. Found 1 repository interfaces. 
+2018:12:12 09:00:17.926 INFO  --- [Test worker] o.s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode! 
+2018:12:12 09:00:17.927 INFO  --- [Test worker] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode. 
+2018:12:12 09:00:17.947 INFO  --- [Test worker] o.s.d.r.c.RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.juana.repository.BoardRepository. 
+2018:12:12 09:00:17.947 INFO  --- [Test worker] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces. 
+2018:12:12 09:00:18.449 INFO  --- [Test worker] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'dataManagerConfig' of type [com.juana.config.DataManagerConfig$$EnhancerBySpringCGLIB$$efdf2aef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018:12:12 09:00:18.584 INFO  --- [Test worker] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6571037f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018:12:12 09:00:18.622 INFO  --- [Test worker] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$e4f150b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018:12:12 09:00:18.751 INFO  --- [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2018:12:12 09:00:18.755 WARN  --- [Test worker] c.z.hikari.util.DriverDataSource : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation. 
+2018:12:12 09:00:19.639 INFO  --- [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2018:12:12 09:00:19.788 INFO  --- [Test worker] org.hibernate.Version : HHH000412: Hibernate Core {5.3.7.Final} 
+2018:12:12 09:00:19.789 INFO  --- [Test worker] org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found 
+2018:12:12 09:00:19.963 INFO  --- [Test worker] o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.4.Final} 
+2018:12:12 09:00:20.137 INFO  --- [Test worker] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect 
+2018:12:12 09:00:20.765 INFO  --- [Test worker] o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerUnit' 
+2018:12:12 09:00:22.504 INFO  --- [Test worker] o.s.s.c.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor' 
+2018:12:12 09:00:22.570 WARN  --- [Test worker] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2018:12:12 09:00:24.030 INFO  --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver : Exposing 15 endpoint(s) beneath base path '/actuator' 
+2018:12:12 09:00:24.118 INFO  --- [Test worker] c.j.GiveMeAnEstimateApplicationTests : Started GiveMeAnEstimateApplicationTests in 7.656 seconds (JVM running for 9.155) 
+2018:12:12 09:00:24.236 INFO  --- [Thread-7] o.s.s.c.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor' 
+2018:12:12 09:00:24.239 INFO  --- [Thread-7] o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'entityManagerUnit' 
+2018:12:12 09:00:24.241 INFO  --- [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2018:12:12 09:00:24.754 INFO  --- [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
