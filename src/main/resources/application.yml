@@ -1,3 +1,6 @@
+server:
+  port: 8888
+
 spring:
   profiles:
     active: dev
@@ -30,5 +33,11 @@ database:
     username: juana
     password: wndksk1!
 
+#database:
+#  datasource:
+#    driverClassName: com.mysql.jdbc.Driver
+#    jdbcUrl: jdbc:mysql://localhost:3306/Estimate?autoReconnect=tru&useUnicode=${app.use-unicode}&characterEncoding=${app.character-Encoding}
+#    username: juana
+#    password: wndksk1!
 
 management.endpoints.web.exposure.include: "*"

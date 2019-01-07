@@ -18,7 +18,7 @@ import javax.sql.DataSource;
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(
-        basePackages = "com.juana.repository"
+        basePackages = "com.juana"
 )
 public class DataManagerConfig {
     @Bean
@@ -28,7 +28,7 @@ public class DataManagerConfig {
         entityManagerFactory.setPersistenceProvider(new HibernatePersistenceProvider());
         entityManagerFactory.setPersistenceUnitName("entityManagerUnit");
         entityManagerFactory.setPackagesToScan(
-                "com.juana.domain" //entities의 패키지 명.
+                "com.juana" //entities의 패키지 명.
         );
         HibernateJpaVendorAdapter jpaVendorAdapter = new HibernateJpaVendorAdapter();
         jpaVendorAdapter.setGenerateDdl(true);

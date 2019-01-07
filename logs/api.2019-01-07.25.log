@@ -1,0 +1,38 @@
+2019:01:07 20:39:45.044 INFO  --- [main] c.juana.GiveMeAnEstimateApplication : Starting GiveMeAnEstimateApplication on juana.local with PID 7729 (/Users/juana/Documents/workspcae/GiveMeAnEstimates/build/classes/java/main started by juana in /Users/juana/Documents/workspcae/GiveMeAnEstimates) 
+2019:01:07 20:39:45.046 INFO  --- [main] c.juana.GiveMeAnEstimateApplication : The following profiles are active: dev 
+2019:01:07 20:39:45.086 INFO  --- [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@385e9564: startup date [Mon Jan 07 20:39:45 KST 2019]; root of context hierarchy 
+2019:01:07 20:39:46.342 INFO  --- [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'dataManagerConfig' of type [com.juana.config.DataManagerConfig$$EnhancerBySpringCGLIB$$ce0195e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2019:01:07 20:39:46.474 INFO  --- [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$43936e76] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2019:01:07 20:39:46.514 INFO  --- [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$c313bba8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2019:01:07 20:39:46.968 INFO  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8888 (http) 
+2019:01:07 20:39:46.990 INFO  --- [main] o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8888"] 
+2019:01:07 20:39:47.002 INFO  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2019:01:07 20:39:47.002 INFO  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.34 
+2019:01:07 20:39:47.012 INFO  --- [localhost-startStop-1] o.a.c.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/juana/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] 
+2019:01:07 20:39:47.630 INFO  --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2019:01:07 20:39:47.631 INFO  --- [localhost-startStop-1] o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2545 ms 
+2019:01:07 20:39:47.692 INFO  --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/] 
+2019:01:07 20:39:47.695 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*] 
+2019:01:07 20:39:47.696 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2019:01:07 20:39:47.696 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2019:01:07 20:39:47.696 INFO  --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*] 
+2019:01:07 20:39:47.740 WARN  --- [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'entityManagerFactory' defined in class path resource [com/juana/config/DataManagerConfig.class]: Unsatisfied dependency expressed through method 'entityManagerFactory' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSource' defined in class path resource [com/juana/config/DataSourceConfig.class]: Unsatisfied dependency expressed through method 'dataSource' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routingDataSource' defined in class path resource [com/juana/config/DataSourceConfig.class]: Unsatisfied dependency expressed through method 'routingDataSource' parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'dataSource': Requested bean is currently in creation: Is there an unresolvable circular reference? 
+2019:01:07 20:39:47.743 INFO  --- [main] o.a.catalina.core.StandardService : Stopping service [Tomcat] 
+2019:01:07 20:39:47.783 ERROR --- [main] o.s.b.d.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   entityManagerFactory defined in class path resource [com/juana/config/DataManagerConfig.class]
+┌─────┐
+|  dataSource defined in class path resource [com/juana/config/DataSourceConfig.class]
+↑     ↓
+|  routingDataSource defined in class path resource [com/juana/config/DataSourceConfig.class]
+└─────┘
+
+ 

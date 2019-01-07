@@ -16,6 +16,7 @@ import java.util.Map;
 @Slf4j
 @Configuration
 public class DataSourceConfig {
+
     @Bean
     @ConfigurationProperties(prefix="database.datasource-read")
     public DataSource readDataSource(){
@@ -47,4 +48,5 @@ public class DataSourceConfig {
     public DataSource dataSource(@Qualifier("routingDataSource") DataSource routingDataSource){
         return new LazyConnectionDataSourceProxy(routingDataSource);
     }
+
 }

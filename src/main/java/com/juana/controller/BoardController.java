@@ -23,7 +23,7 @@ public class BoardController {
     @Autowired
     private BoardService boardService;
 
-    @GetMapping(value = "/list")
+    @GetMapping
     public List<BoardEntity> getBoardList() {
         // paging 처리 필요
         return boardService.getBoardList();
