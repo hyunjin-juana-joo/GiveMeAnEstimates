@@ -19,25 +19,12 @@ logging:
 ---
 spring:
   profiles: dev
-
-# database replica 필요할까 의문
-database:
-  datasource-write:
-    driverClassName: com.mysql.jdbc.Driver
-    jdbcUrl: jdbc:mysql://localhost:3306/Estimate?autoReconnect=tru&useUnicode=${app.use-unicode}&characterEncoding=${app.character-Encoding}
-    username: juana
-    password: wndksk1!
-  datasource-read:
-    driverClassName: com.mysql.jdbc.Driver
-    jdbcUrl: jdbc:mysql://localhost:3306/Estimate?autoReconnect=true&useUnicode=${app.use-unicode}&characterEncoding=${app.character-Encoding}
-    username: juana
-    password: wndksk1!
-
-#database:
-#  datasource:
-#    driverClassName: com.mysql.jdbc.Driver
-#    jdbcUrl: jdbc:mysql://localhost:3306/Estimate?autoReconnect=tru&useUnicode=${app.use-unicode}&characterEncoding=${app.character-Encoding}
-#    username: juana
-#    password: wndksk1!
+  jpa:
+    database:
+      datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        jdbcUrl: jdbc:mysql://localhost:3306/Estimate?autoReconnect=true&useUnicode=${app.use-unicode}&characterEncoding=${app.character-Encoding}
+        username: juana
+        password: wndksk1!
 
 management.endpoints.web.exposure.include: "*"
