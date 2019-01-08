@@ -18,6 +18,8 @@
 *.ipr
 /out/
 logs/
+/logs
+logs/*
 /logs/*
 
 ### NetBeans ###

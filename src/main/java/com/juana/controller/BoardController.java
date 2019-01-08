@@ -1,6 +1,6 @@
 package com.juana.controller;
 
-import com.juana.domain.BoardEntity;
+import com.juana.domain.Board;
 import com.juana.service.BoardService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,12 +24,12 @@ public class BoardController {
     private BoardService boardService;
 
     @GetMapping
-    public List<BoardEntity> getBoardList() {
+    public List<Board> getBoardList() {
         // paging 처리 필요
         return boardService.getBoardList();
     }
 
-    public Optional<BoardEntity> getBoard(@PathVariable int id) {
+    public Optional<Board> getBoard(@PathVariable int id) {
         return boardService.getBoard(id);
     }
 }

@@ -1,6 +1,6 @@
 package com.juana.service;
 
-import com.juana.domain.BoardEntity;
+import com.juana.domain.Board;
 import com.juana.repository.BoardRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,12 +19,12 @@ public class BoardService {
     @Autowired
     private BoardRepository boardRepository;
 
-    public List<BoardEntity> getBoardList() {
-        List<BoardEntity> boardList = boardRepository.findAll();
+    public List<Board> getBoardList() {
+        List<Board> boardList = boardRepository.findAll();
         return boardList;
     }
 
-    public Optional<BoardEntity> getBoard(int id) {
+    public Optional<Board> getBoard(int id) {
         // 인자값을 int인지 Integer인지
         return boardRepository.findById(id);
     }
