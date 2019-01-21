@@ -1,0 +1,27 @@
+bootJar {
+    enabled = false
+}
+
+bootRun {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+
+
+dependencies {
+    compile('org.modelmapper:modelmapper:2.3.0')
+    compile('org.springframework.boot:spring-boot-starter-validation')
+    compile('org.springframework.boot:spring-boot-starter-json')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('org.springframework.boot:spring-boot-starter-data-rest')
+    compile("mysql:mysql-connector-java")
+//    compile('com.querydsl:querydsl-core')
+//    compile('com.querydsl:querydsl-apt')
+//    compile('com.querydsl:querydsl-jpa')
+    compile('com.google.code.gson:gson')
+    compile('io.springfox:springfox-swagger2:2.9.2')
+    compile('io.springfox:springfox-swagger-ui:2.9.2')
+}

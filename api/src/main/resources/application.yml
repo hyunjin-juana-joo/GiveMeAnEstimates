@@ -1,0 +1,23 @@
+# common
+spring:
+  application:
+    name: api
+  profiles:
+    include:
+      - core
+    active: dev
+
+server:
+  port: 8888
+
+---
+spring.profiles: local
+
+---
+spring.profiles: dev
+
+---
+spring.profiles: stage
+
+---
+spring.profiles: production

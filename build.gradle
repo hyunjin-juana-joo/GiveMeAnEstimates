@@ -1,45 +1,38 @@
+group 'kr.co.within.kakarot'
+version '1.0.0-SNAPSHOT'
+
 buildscript {
 	ext {
 		springBootVersion = '2.0.5.RELEASE'
 	}
 	repositories {
-		mavenCentral()
+		jcenter()
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
 }
 
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
+apply plugin: 'idea'
 
-group = 'com.juana'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'idea'
+	apply plugin: 'org.springframework.boot'
+	apply plugin: 'io.spring.dependency-management'
 
-repositories {
-	mavenCentral()
-}
+	sourceCompatibility = 1.8
+	targetCompatibility = 1.8
 
-dependencies {
-	compile('org.springframework.boot:spring-boot-starter-web')
-	compile('org.springframework.boot:spring-boot-starter-json')
-	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	compile('org.springframework.boot:spring-boot-starter-data-rest')
+	[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
-	compile("mysql:mysql-connector-java")
-	compileOnly('org.projectlombok:lombok:1.18.2')
-	testCompile('org.projectlombok:lombok:1.18.2')
-	testCompile('org.springframework.boot:spring-boot-starter-test') //이전 spring data에서 couchbase client 버전이 느리게 적용되었으나 현재 1달 이내로 따라오고 있어서 spring-boot-starter-test를 사용한다!
+	repositories {
+		jcenter()
+	}
 
-	compile('io.springfox:springfox-swagger2:2.9.2')
-	compile('io.springfox:springfox-swagger-ui:2.9.2')
-}
+	dependencies {
+		compile('org.projectlombok:lombok:1.18.2')
+		testCompile('org.springframework.boot:spring-boot-starter-test')
 
-dependencyManagement {
-	imports {
-		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Finchley.SR1"
 	}
 }

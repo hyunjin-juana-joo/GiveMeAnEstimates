@@ -1,0 +1,5 @@
+rootProject.name = 'GiveMeAnEstimates'
+
+include ':core', ':api'
+include 'api'
+
