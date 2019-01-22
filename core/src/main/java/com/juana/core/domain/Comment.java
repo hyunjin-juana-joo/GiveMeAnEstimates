@@ -1,5 +1,6 @@
 package com.juana.core.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.CreationTimestamp;
@@ -28,8 +29,9 @@ public class Comment {
     private Integer userId;
 
     @Column(columnDefinition = "TEXT")
-    private String contents;
+    private String content;
 
+    @JsonIgnore
     private Boolean isDeleted;
 
     @CreationTimestamp

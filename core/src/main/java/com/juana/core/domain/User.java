@@ -1,5 +1,6 @@
 package com.juana.core.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.CreationTimestamp;
@@ -35,6 +36,7 @@ public class User {
 
     private Integer status;
 
+    @JsonIgnore
     private Boolean isDeleted;
 
     @CreationTimestamp

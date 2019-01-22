@@ -1,5 +1,6 @@
 package com.juana.core.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.CreationTimestamp;
@@ -8,6 +9,7 @@ import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * Created by juana on 2018. 12. 9..
@@ -35,6 +37,11 @@ public class Board {
     @Column(columnDefinition = "TEXT")
     private String content;
 
+    @OneToMany
+    @JoinColumn(name = "boardId")
+    private List<Comment> comments;
+
+    @JsonIgnore
     private Boolean isDeleted;
 
     @CreationTimestamp
