@@ -6,6 +6,7 @@ import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.hibernate.annotations.Where;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -22,26 +23,28 @@ public class User {
 
     private String name;
 
-//    private String passwd;
-//
-//    private String nickName;
-//
-//    private String phoneNumber;
-//
-//    private String emailAddress;
-//
-//    private LocalDateTime lastLoginedAt;
-//
-//    private LocalDateTime passwdExpiredAt;
-//
-//    private Integer status;
-//
+    private String passwd;
+
+    private String nickName;
+
+    private String phoneNumber;
+
+    private String emailAddress;
+
+    @Nullable
+    private LocalDateTime lastLoginedAt;
+
+    @Nullable
+    private LocalDateTime passwdExpiredAt;
+
+    private Integer status;
+
 //    @JsonIgnore
-//    private Boolean isDeleted;
-//
-//    @CreationTimestamp
-//    private LocalDateTime createdAt;
-//
-//    @UpdateTimestamp
-//    private LocalDateTime updatedAt;
+    private Boolean isDeleted;
+
+    @CreationTimestamp
+    private LocalDateTime createdAt;
+
+    @UpdateTimestamp
+    private LocalDateTime updatedAt;
 }

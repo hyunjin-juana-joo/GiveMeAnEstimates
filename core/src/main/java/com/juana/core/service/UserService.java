@@ -24,4 +24,9 @@ public class UserService {
         List<User> userList = userRepository.findAll();
         return userList;
     }
+
+    public User createUser(User user) {
+        log.info(">>>>>> service...");
+        return userRepository.save(user);
+    }
 }
