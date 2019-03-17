@@ -22,26 +22,26 @@ public class User {
 
     private String name;
 
-    private String passwd;
-
-    private String nickName;
-
-    private String phoneNumber;
-
-    private String emailAddress;
-
-    private LocalDateTime lastLoginedAt;
-
-    private LocalDateTime passwdExpiredAt;
-
-    private Integer status;
-
-    @JsonIgnore
-    private Boolean isDeleted;
-
-    @CreationTimestamp
-    private LocalDateTime createdAt;
-
-    @UpdateTimestamp
-    private LocalDateTime updatedAt;
+//    private String passwd;
+//
+//    private String nickName;
+//
+//    private String phoneNumber;
+//
+//    private String emailAddress;
+//
+//    private LocalDateTime lastLoginedAt;
+//
+//    private LocalDateTime passwdExpiredAt;
+//
+//    private Integer status;
+//
+//    @JsonIgnore
+//    private Boolean isDeleted;
+//
+//    @CreationTimestamp
+//    private LocalDateTime createdAt;
+//
+//    @UpdateTimestamp
+//    private LocalDateTime updatedAt;
 }

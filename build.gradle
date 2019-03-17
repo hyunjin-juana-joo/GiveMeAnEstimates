@@ -1,4 +1,4 @@
-group 'kr.co.within.kakarot'
+group 'com.juana'
 version '1.0.0-SNAPSHOT'
 
 buildscript {
@@ -32,7 +32,6 @@ subprojects {
 
 	dependencies {
 		compile('org.projectlombok:lombok:1.18.2')
-		testCompile('org.springframework.boot:spring-boot-starter-test')
-
+//		testCompile('org.springframework.boot:spring-boot-starter-test')
 	}
 }
